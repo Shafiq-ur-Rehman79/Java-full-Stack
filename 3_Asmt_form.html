@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reg form</title>
+    </head>
+    <body>
+        <h1>Internship Registration Form</h1>
+        <Form>
+            <fieldset>
+                <legend>Form Filling</legend><br>
+            First Name:   <input type="text" required placeholder="Enter your First Name "><br><br><!--required attribute means it is compulsary to fill-->
+            Last Name:    <input type="text" placeholder="Enter your Last Name"><br><br>
+            Phone Number: <input type="number" placeholder="minimum 10 digits"  > <br><br>
+            Email: <input type="email" placeholder="abch@xyz.pq"> <br><br>
+            Gender: <input type="radio" name="gender" value="male">Male     <input type="radio" name="gender" value="Female">Female <br><br>
+            <!--for the gender the radio(attribute value) make sures that only single option is selected -->
+            Course Offered:<br>
+                    <input type="checkbox">Java Full Stack <br>
+                    <input type="checkbox">Python Full Stack <br>
+                    <input type="checkbox">Artificial Intelligence & Machine Learning <br>
+                    <input type="checkbox">Data Science using Python <br> <br>
+            Aadhaar Card: <input type="file"><br><br>
+            Your Residential Country: <select>
+                <option>India</option>
+                <option>Dubai</option>              <!--to give the dropdown option should use the select tag and option tag-->
+                <option>Saudi-Arabia</option>
+                <option>Turkey</option>
+            </select><br><br>
+            <!--<input type="button" value="submit">-->
+            <input type="reset"><br><br>
+            <input type="submit">
+        </fieldset>
+        <h4>Here is the Audio Instructions for the form filling </h4>
+        <h4>And the video tutorial for how to fill the form</h4>
+        <audio controls>
+            <source src="download.wav">
+        </audio>
+        <video controls>
+            <source src="brce/brce/internship.mp">
+        </video><br><br>
+        <p>*Note: The video and audio doesn't have to do anything with the form  its just a demo data</p>
+        
+        </Form>
+    </body>
+</html>
