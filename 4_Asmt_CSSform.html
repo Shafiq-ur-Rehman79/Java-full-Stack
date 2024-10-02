@@ -2,64 +2,68 @@
 <html>
     <head>
         <title>REGISTRATION FORM</title>
-        <!--<link rel="stylesheet" href="4_Asmt_CSSform.css">-->
+        <link rel="stylesheet" href="4_Asmt_CSSform.css">
     </head>
     <body style=" background-image: url(abstract-paper-cut-banner-template-backgrounds-paper-cut-shapes-template-banner_1142-10940.jpg); 
     background-size: cover;">
            <h1 style="text-align: center;">Registration Form</h1><br>
           
-<marquee behavior="alternate" direction="right" scrollamount="11" style="color: red; font-size: large;">Register for FREE</marquee>
-<marquee scrollamount="10" style="color:rgb(110, 110, 215); font-size: large;">Hurry up Limited Registrations Only</marquee>   <br><br>      <!--marquee is nothing but the floating text on the screen from left to right & vise_versa-->
+<marquee class="m1" behavior="alternate" direction="right" scrollamount="11" > Register for FREE  <span style="color: yellow;">Register for FREE </span>    <span style="color: blue;">Register for FREE </span>  </marquee>
+<marquee class="m2" scrollamount="10">Hurry up Limited Registrations Only  <span style="color: brown;"> Hurry up Limited Registrations Only</span></marquee>   <br><br>      <!--marquee is nothing but the floating text on the screen from left to right & vise_versa-->
 
 
-
-
-        <Form style="text-align: center; color: rgb(10, 160, 87); 
-        font-size:22px; border-style: solid; border-radius:12px; 
-        outline-style: dashed; outline-offset: 0.5em; border-width: thick;"><br>
+        <Form class="h"><br>
             <fieldset>
-                <legend style="text-align:left;">Form Filling</legend><br>
-
-            <b> First Name: </b>  <input type="text" required placeholder="Enter your First Name "><br><br><!--required attribute means it is compulsary to fill-->
+                <legend class="legend"><b>Form Filling</b></legend><br>
+<p class="main">
+            <b> First Name: </b>  <input class="i1" type="text" required placeholder="Enter your First Name "><br><br><!--required attribute means it is compulsary to fill-->
            <b> Last Name: </b>   <input type="text" placeholder="Enter your Last Name"><br><br>
-            <b> Phone Number:</b> <input type="number" placeholder="minimum 10 digits"  > <br><br>
-           <b> Email: </b><input type="email" placeholder="Ex: abch@xyz.com"> <br><br>
-
+           <b> Date of Birth: </b> <input type="date"><br><br>
+           
            <b> Gender:</b> <input type="radio" name="gender" value="male">
                <span style="color: black;">Male</span>     
                
                <input type="radio" name="gender" value="Female">  <!--for the gender the radio(attribute value) make sures that only single option is selected -->
                
                <span style="color:rgb(237, 84, 237);">Female</span> <br><br>
+
+           <b> Phone Number:</b> <input type="number" placeholder="minimum 10 digits"  > <br><br>
+           <b> Email: </b><input type="email" placeholder="Ex: abch@xyz.com"> <br><br>
+           <b> Password: </b> <input type="password"><br>
+
+           
             
-            <b> Course Offered:</b> <br>
+           <p class="co"> <b> Course Offered:</b> <br>
                     <input type="checkbox">Java Full Stack <br>
                     <input type="checkbox">Python Full Stack <br>
                     <input type="checkbox">Artificial Intelligence & Machine Learning <br>
-                    <input type="checkbox">Data Science using Python <br> <br>
-            <b>Aadhaar Card:</b> <input type="file"><br><br>
-           <b> Your Residential Country: </b> <select>
+                    <input type="checkbox">Data Science using Python</p> 
+</p>
+            <p class="adh">  <b>Aadhaar Card:</b> <input type="file"></p>
+           <b>  Your Residential Country: </b> <select>
                 <option>India</option>
                 <option>Dubai</option>              <!--to give the dropdown option should use the select tag and option tag-->
                 <option>Saudi-Arabia</option>
                 <option>Turkey</option>
-            </select><br><br>
+            </select><br><br><br>
 
             <!--<input type="button" value="submit">-->
-            <input style="color: blue; font-weight: bold;" type="reset"><br><br>
-            <input style="color:rgb(26, 243, 117); font-weight: bold; " type="submit">
+            <input class="reset" type="reset"><br><br>
+            <input class="submit" type="submit">
             
         </fieldset><br>
-        </Form>
+        </Form><br><br>
         
-        <form style="text-align: center;">
+        <form style="text-align: center; color: orangered">
             <h4>Here is the Audio Instructions for the form filling </h4>
-        <h4>And the video tutorial for how to fill the form</h4>
-        <audio controls>
+       
+        <audio class="audio" controls>
             <source src="download.wav">
         </audio><br><br>
-        <video controls>
-            <source src="brce/brce/internship.mp">
+
+        <h4>And the video tutorial for how to fill the form</h4>
+        <video class="video" controls>
+            <source src="brce/brce/internship.mp4">
         </video><br><br>
         <hr>
         <p>*Note: The video and audio doesn't have to do anything with the form  its just a demo data</p>
